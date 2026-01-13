@@ -6,7 +6,10 @@ export interface IUser extends Document {
     name: string;
     email: string;
     password: string;
-    points: number;
+    creditBalance: number;
+    escrowCredits: number;
+    trustScore: number;
+    role: 'user' | 'admin';
     redeemedRewards: number;
     isVerified: boolean;
     createdAt: Date;
@@ -35,9 +38,22 @@ const userSchema = new Schema({
         required: [true, 'Password is required'],
         minlength: [6, 'Password must be at least 6 characters']
     },
-    points: {
+    creditBalance: {
         type: Number,
-        default: 100
+        default: 1000
+    },
+    escrowCredits: {
+        type: Number,
+        default: 0
+    },
+    trustScore: {
+        type: Number,
+        default: 50
+    },
+    role: {
+        type: String,
+        enum: ['user', 'admin'],
+        default: 'user'
     },
     redeemedRewards: {
         type: Number,

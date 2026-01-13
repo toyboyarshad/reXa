@@ -56,8 +56,8 @@ export const initEscrowCron = () => {
                             transaction.toUser,
                             { 
                                 $inc: { 
-                                    escrowBalance: -transaction.netAmount,
-                                    walletBalance: transaction.netAmount,
+                                    escrowCredits: -transaction.credits,
+                                    creditBalance: transaction.credits,
                                     trustScore: 1 // Small boost
                                 } 
                             },

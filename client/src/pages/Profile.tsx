@@ -25,7 +25,7 @@ type UserProfile = {
 };
 
 export const Profile = () => {
-  const [profile, setProfile] = useRecoilState<UserProfile | null>(profileState);
+  const [profile, setProfile] = useRecoilState<UserProfile | any>(profileState);
   const [loading, setLoading] = useRecoilState<boolean>(profileLoadingState);
   const [error, setError] = useRecoilState<string>(profileErrorState);
   const [isEditing, setIsEditing] = useState(false);

@@ -37,7 +37,8 @@ export const register = async (req: Request, res: Response) => {
             name,
             email,
             password,
-            points: 100,
+            creditBalance: 1000,
+            escrowCredits: 0,
             redeemedRewards: 0,
             isVerified: false
         });
@@ -126,7 +127,9 @@ export const verifyOtp = async (req: Request, res: Response) => {
             id: user._id,
             name: user.name,
             email: user.email,
-            points: user.points,
+            creditBalance: user.creditBalance,
+            escrowCredits: user.escrowCredits,
+            trustScore: user.trustScore,
             redeemedRewards: user.redeemedRewards,
             isVerified: user.isVerified
         };
@@ -175,7 +178,9 @@ export const login = async (req: Request, res: Response) => {
                 _id: user._id,
                 name: user.name,
                 email: user.email,
-                points: user.points,
+                creditBalance: user.creditBalance,
+                escrowCredits: user.escrowCredits,
+                trustScore: user.trustScore,
                 redeemedRewards: user.redeemedRewards,
                 isVerified: user.isVerified
             }
@@ -263,7 +268,7 @@ export const updateProfile = async (req: AuthRequest, res: Response) => {
             _id: user._id,
             name: user.name,
             email: user.email,
-            points: user.points,
+            creditBalance: user.creditBalance,
             redeemedRewards: user.redeemedRewards,
             isVerified: user.isVerified
         };

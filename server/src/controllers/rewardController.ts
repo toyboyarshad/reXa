@@ -263,9 +263,9 @@ export const redeemReward = async (req: AuthRequest, res: Response) => {
             return res.status(404).json({ message: 'User not found' });
         }
 
-        if (redeemingUser.points < reward.points) {
+        if (redeemingUser.creditBalance < reward.points) {
             console.log('Insufficient points:', {
-                userPoints: redeemingUser.points,
+                userPoints: redeemingUser.creditBalance,
                 requiredPoints: reward.points
             });
             return res.status(400).json({ message: 'Insufficient points' });
@@ -279,7 +279,7 @@ export const redeemReward = async (req: AuthRequest, res: Response) => {
                 { _id: redeemingUser._id },
                 { 
                     $inc: { 
-                        points: -reward.points,
+                        creditBalance: -reward.points,
                         redeemedRewards: 1  // Increment redeemedRewards count
                     } 
                 },
@@ -287,7 +287,7 @@ export const redeemReward = async (req: AuthRequest, res: Response) => {
             ),
             User.findOneAndUpdate(
                 { _id: ownerUser._id },
-                { $inc: { points: reward.points } },
+                { $inc: { creditBalance: reward.points } },
                 { new: true }
             ),
             Reward.findOneAndUpdate(
@@ -306,9 +306,9 @@ export const redeemReward = async (req: AuthRequest, res: Response) => {
         const transaction = new Transaction({
             fromUser: redeemingUser._id,
             toUser: ownerUser._id,
-            points: reward.points,
+            credits: reward.points,
             reward: reward._id,
-            type: 'redemption'
+            type: 'purchase'
         });
 
         await transaction.save();
