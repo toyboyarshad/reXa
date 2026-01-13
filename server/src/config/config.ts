@@ -7,7 +7,7 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 export const CONFIG = {
     // Server
     NODE_ENV: process.env.NODE_ENV || 'development',
-    PORT: process.env.PORT || 5000,
+    PORT: process.env.PORT || 3000,
     API_VERSION: process.env.API_VERSION || 'v1',
     
     // Database
@@ -21,9 +21,9 @@ export const CONFIG = {
     CORS_ORIGIN: isDevelopment 
         ? [
             'http://localhost:5173',
-            'http://localhost:5000',
+            'http://localhost:3000',
             'http://127.0.0.1:5173',
-            'http://127.0.0.1:5000'
+            'http://127.0.0.1:3000'
           ]
         : [
             'https://rex-beige.vercel.app',
@@ -33,8 +33,21 @@ export const CONFIG = {
     // Rate Limiting
     RATE_LIMIT_ENABLED: process.env.RATE_LIMIT_ENABLED === 'true',
     RATE_LIMIT_WINDOW: parseInt(process.env.RATE_LIMIT_WINDOW || '900000'),
-    RATE_LIMIT_MAX: parseInt(process.env.RATE_LIMIT_MAX || '5'),
+    RATE_LIMIT_MAX: parseInt(process.env.RATE_LIMIT_MAX || '100'),
     
     // Features
     ENABLE_SWAGGER: process.env.ENABLE_SWAGGER === 'true',
-}; 
+    ENABLE_LOGGING: process.env.ENABLE_LOGGING === 'true',
+
+    // Email Service
+    EMAIL_USER: process.env.EMAIL_USER,
+    EMAIL_PASS: process.env.EMAIL_PASS
+};
+
+// Validation
+const requiredEnvVars = ['MONGODB_URI', 'JWT_SECRET'];
+const missingEnvVars = requiredEnvVars.filter(envVar => !process.env[envVar]);
+
+if (missingEnvVars.length > 0) {
+    throw new Error(`Missing required environment variables: ${missingEnvVars.join(', ')}`);
+} 

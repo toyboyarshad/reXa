@@ -26,7 +26,7 @@ export const Register = () => {
             setIsOtpStep(true);
             setTimeLeft(600); // Start timer at 10 minutes
             toast.success('Please check your email for the OTP.', {
-                duration: 5000,
+                duration: 3000,
             });
         } catch (error: any) {
             toast.error(
@@ -44,7 +44,7 @@ export const Register = () => {
         try {
             const res = await authApi.verifyOtp({ userId, otp });
             toast.success(res.data.message, {
-                duration: 5000,
+                duration: 3000,
             });
             navigate('/signin', {
                 state: {
@@ -67,7 +67,7 @@ export const Register = () => {
             await authApi.resendOtp(formData.email);
             setTimeLeft(600); // Reset timer to 10 minutes
             toast.success('A new OTP has been sent to your email.', {
-                duration: 5000,
+                duration: 3000,
             });
         } catch (error: any) {
             toast.error(

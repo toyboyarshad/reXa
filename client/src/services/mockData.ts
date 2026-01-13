@@ -3,7 +3,7 @@ export const mockRewards = [
         id: '1',
         title: 'Netflix 1 Month Premium',
         description: 'Get one month of Netflix Premium subscription. Watch on 4 screens at once in HD.',
-        points: 5000,
+        points: 3000,
         code: 'NFLX2024',
         expiryDate: '2024-12-31',
         isActive: true,

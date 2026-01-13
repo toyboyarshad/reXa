@@ -4,7 +4,7 @@ import { CONFIG } from './config/config';
 import transactionRoutes from './routes/transaction.routes';
 import { Category } from './models/category.model';  // Make sure path is correct
 
-const PORT = CONFIG.PORT || 5000;
+const PORT = CONFIG.PORT || 3000;
 
 
 const categoriesList = [

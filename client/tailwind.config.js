@@ -38,6 +38,7 @@ export default {
       },
       animation: {
         'float': 'float 3s ease-in-out infinite',
+        'spin-slow': 'spin 8s linear infinite',
       },
       keyframes: {
         float: {
