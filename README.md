@@ -1,5 +1,7 @@
 # Rexa System Technical Documentation
 
+read till end if ur free :D
+
 ## Overview
 
 The Rexa system is a comprehensive platform designed to facilitate reward management and redemption within a points-based system. It comprises both a Node.js server and a React-based client application. The server handles user authentication, reward creation and management, transaction processing, and communication with a MongoDB database. The client provides a user interface for browsing rewards, redeeming points, managing profiles, and viewing transaction history. This documentation provides a detailed technical overview of the system's architecture, workflows, and implementation details.
@@ -1923,3 +1925,5 @@ function ProfilePage() {
 *   **Properly Handle Errors:** Avoid exposing sensitive information in error messages.
 
 This documentation provides a comprehensive guide to the authentication system, covering its architecture, workflows, implementation details, and security considerations. By following these guidelines, developers can effectively utilize and maintain the system to ensure secure and reliable user authentication.
+
+Thanks for reading till end really worth writing :D
